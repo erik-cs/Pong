@@ -117,13 +117,6 @@ function drawEverything() {
 function colorCircle(centerX, centerY, radius, drawColor) {
   canvasContext.fillStyle = drawColor;
   canvasContext.beginPath();
-  /**
-   * Arc method arguments explained:
-   * ballX and 100 are the X and Y position based on the center of circle
-   * 10 is the radius of the circle
-   * 0 and Math.PI * 2 is the radian
-   * true draws circle clockwise
-   */
   canvasContext.arc(centerX, centerY, radius, 0, Math.PI * 2, true);
   canvasContext.fill();
 }
